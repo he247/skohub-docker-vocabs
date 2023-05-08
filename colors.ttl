@@ -1,9 +1,6 @@
-@prefix colour: <https://example.org/colour/> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
 @prefix ex: <http://example.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
 
 ex: a skos:ConceptScheme ;
     dct:title "Möbelstücke"@de ;
@@ -103,17 +100,3 @@ ex:Kinderbett a  skos:Concept ;
     skos:definition "Bett für Kinder, größengerecht etc."@de ;
     skos:example "weisses Fußbodenbett mit Kokosmatraze"@de ;
     skos:inScheme ex: .
-
-
-colour: a skos:ConceptScheme ;
-    dct:title "Colour Vocabulary"@en, "Farbvokabular"@de ;
-    dct:creator "Hans Dampf"@de ;
-    dct:created "2021-11-02"^^xsd:date ;
-    dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept colour:violet .
-
-colour:violet a skos:Concept ;
-    skos:prefLabel "Violett"@de, "violet"@en ;
-    skos:altLabel "Lila"@de, "purple"@en ;
-    skos:topConceptOf colour: .
-
